@@ -34,7 +34,7 @@ oc get nodes.
 # OpenShift Log Forwarder to Kafka
 https://srikanthvalluru.medium.com/openshift-log-forwarder-to-kafka-5eb2af6f1528
 
-# OpenShift Log Forwarding to Splunk
+# OpenShift Log Forwarder to Splunk
 https://srikanthvalluru.medium.com/openshift-log-forwarder-to-splunk-3763c5ed3090
 
 
