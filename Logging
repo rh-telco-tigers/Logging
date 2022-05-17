@@ -1,0 +1,29 @@
+Show how to check node logs
+oc debug node/master1.nokia.ocp-poc-demo.internal
+Chroot /host 
+Oc get nodes
+Oc adm node-logs <node-name>
+See what logs are available in masters/workers/infra nodes in /var/log:
+oc adm node-logs --role master --path=/
+oc adm node-logs --role worker --path=/
+oc adm node-logs --role infra --path=/
+Show logs available in a node in /var/log:
+oc adm node-logs master1.nokia.ocp-poc-demo.internal --path=/audit/audit.log
+View the log for a specific pod:
+oc logs -f <pod_name> -c <container_name>
+What is the location of OCP home to check logs on disk ? 
+If web console is not up, then where to check
+Oc get co
+Oc project openshift-console
+
+
+Can we use above step and what is the location on disk ?
+How to check if master / worker nodes in good state ?
+Web Console
+Oc get nodes. Is there anything else ? 
+https://docs.openshift.com/container-platform/4.9/installing/validating-an-installation.html
+Show how the application logs, audit logs and node logs can be forwarded to external systems like kafka, splunk…
+Get Sample config TODO
+Mention about 3rd party providers for logging and monitoring
+https://docs.openshift.com/container-platform/4.9/security/audit-log-view.html
+https://docs.openshift.com/container-platform/4.9/security/audit-log-policy-config.html
